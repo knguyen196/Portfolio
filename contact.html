@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    <header>
+        <div class ="header-wrapper">
+            <div id ="dropdown">
+                <button id="menuButton">Menu</button>
+                <div class ="dropdown-content">
+                <a href="index.html">Home</a>   
+                <a href="about.html">About me</a>
+                <a href="projects.html">Projects</a>
+                </div>
+            </div>
+            <div id ="contact">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="name-section">
+            <h1 id = "header-name">KENT NGUYEN</h1>
+            <h2 id="title-name">Lets Connect!</h2>
+            <div class ="underline"></div>
+        </div>
+    <div class="contact-container">
+        <p class = "contact-text">Feel free to reach out to me with the contact form or any of my socials below!</strong></p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thankyou.html">
+            <input type="hidden" name="access_key" value="ff91737e-4053-4eb0-b178-a14d5b7ebb5c">
+            <input type="text" name="name" placeholder="Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Email Address" class="contact-input" required>
+            <textarea name="message" placeholder="Message" class="contact-input" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+        </div>
+    </div>
+    </div>
+    <script src="transition.js" defer></script>
+</body>
+</html>

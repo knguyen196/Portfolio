@@ -1,0 +1,230 @@
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: #d6ebd6;
+}
+
+.header-wrapper{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6ebd6;
+    margin: 10px;   
+    }
+
+
+#menuButton{
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #0b470b;
+    cursor:pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#contact a{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #0b470b;
+    cursor:pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+}
+
+#dropdown{
+    display:flex;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: #406e50;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #417944;
+}
+
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#dropdown:hover #menuButton {
+    color: #417944;
+}
+
+.name-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    padding-left: 10%;
+    width: 60%;
+}
+
+#header-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -10px;
+    font-size: 36px;
+}
+
+#title-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.underline {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+#paragraph1{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+    width: 80%;
+    margin-top: 0px;
+    gap: 20px;   
+}
+
+#first-p{
+    flex: 1 1 60%;
+    color: #000000;
+    max-width: 600%;
+    line-height:1.5;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#pfp1 {
+    width: 100%;
+    max-width: 300px;
+    height: auto; 
+    object-fit: cover; 
+    position: relative;
+    margin-top: -100px;
+    right: 80px;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    width:80%;
+}
+
+#skills-button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+#skills {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-img {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-img div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-img div{
+    visibility: hidden;
+    transform: translateY(400px);
+    opacity:0;
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.skills-img div.show{
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.skills-img div:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.skills-img div:nth-child(2) {
+    transition-delay: 0.4s;
+}
+.skills-img div:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+#html-img,
+#css-img,
+#js-img {
+    width: 30px;
+    height: 30px;
+}
+
+
+span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #pfp1 {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #pfp1 {
+        max-width: 150px;
+    }
+}

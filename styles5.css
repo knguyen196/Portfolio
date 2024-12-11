@@ -1,0 +1,34 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5cfde;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    text-align: center;      
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;             
+}
+
+.thank-you p {
+    font-size: 1.5rem;       
+    margin: 0;              
+}
+
+.thank-you a {
+    font-size: 1rem;         
+    color: #333;             
+    text-decoration: none;   
+}
+
+.thank-you a:hover {
+    text-decoration: underline;
+}

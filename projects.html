@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    <header>
+        <div class ="header-wrapper">
+            <div id ="dropdown">
+                <button id="menuButton">Menu</button>
+                <div class ="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                </div>
+            </div>
+            <div id ="contact">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+        </header>
+        <div class="content">
+        <div class="name-section">
+            <h1 id = "header-name">KENT NGUYEN</h1>
+            <h2 id="title-name">Projects</h2>
+            <div class ="underline"></div>
+        </div>
+    <div id="projects-list">
+        <div class="project-container">
+            <div class="openbank-container">
+        <ul id="projects1">
+        <li>OpenBank DBMS</li>
+        <div class="slideshow-wrapper">
+            <img class="slideshow1" src="/images/dashboard.png" alt="OpenBank Dashboard">
+            <img class="slideshow1" src="/images/login.png" alt="OpenBank Login">
+            <img class="slideshow1" src="/images/account.png" alt="OpenBank Account">
+            <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        <br>
+    <a id="openbank-git" href="https://github.com/MariahSalgado/CPSC254_Project" target="_blank">
+        <img src="/images/github-mark.png" alt ="GitHub Logo" style="width:20px; height:20px;">
+        GitHub Repo
+            </a>
+        </ul>
+    </div>
+    <div id ="openbank-about">
+        This project was made in my Open Source Development class. This is a database management system that includes a sign up page, login, and account dashboard. The languages used in this project were HTML, CSS, JavaScript, and PHP.
+        </div>
+    </div>
+</div>
+</div>
+    <script src="script.js" defer></script>
+    <script src="transition.js" defer></script>
+</body>
+</html>
