@@ -1,59 +1,70 @@
-body{
-    display:flex;
-    flex-direction: column;
-    background-color: #abd1f3;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-y: auto;
 }
 
-.header-wrapper{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #abd1f3;
+    background-image: url('./images/project.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+}
+
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #abd1f3;
-    margin: 10px;   
-    }
+    margin: 10px;
+}
 
-
-#menuButton{
+#menuButton {
     background: none;
     border: none;
     font-size: 12px;
     color: #063258;
-    cursor:pointer;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
+    font-family: 'Poppins';
 }
 
-#contact a{
+#contact a {
     text-decoration: none;
     background: none;
     border: none;
     font-size: 12px;
     color: #063258;
-    cursor:pointer;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
-    
+    font-family: 'Poppins';
 }
 
-#dropdown{
-    display:flex;
+#dropdown {
+    display: flex;
     align-items: center;
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content{
-    display:none;
-    position:absolute;
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: #346fa3;
     min-width: 160px;
     z-index: 1;
+    font-family: 'Poppins';
 }
 
-.dropdown-content a{
+.dropdown-content a {
     font-size: 12px;
     color: rgb(255, 255, 255);
     padding: 12px 18px;
@@ -68,35 +79,34 @@ body{
     background-color: #3d7bb1;
 }
 
-
 #dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 #dropdown:hover #menuButton {
     color: #3d7bb1;
 }
 
-.name-section{
+.name-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
+    align-items: flex-start;
     padding-left: 10%;
     width: 60%;
 }
 
-#header-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#header-name {
+    font-family: 'Abril Fatface';
     margin-bottom: -10px;
     font-size: 36px;
 }
 
-#title-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#title-name {
+    font-family: 'Abril Fatface';
     font-size: 30px;
     margin-bottom: 5px;
 }
+
 .underline {
     width: 100%;
     height: 4px;
@@ -104,7 +114,7 @@ body{
     margin-bottom: 10px;
 }
 
-.project-container{
+.project-container {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -112,18 +122,17 @@ body{
     padding: 20px 0;
 }
 
-.openbank-container{
-    flex:1;
+.openbank-container {
+    flex: 1;
     text-align: center;
 }
 
-#projects-list{
+#projects-list {
     display: flex;
     padding-left: 10%;
     width: 75%;
     margin-top: 0px;
     gap: 20px;
-
 }
 
 .slideshow-wrapper {
@@ -133,21 +142,22 @@ body{
     margin: auto;
 }
 
-.slideshow1{
+.slideshow1 {
     display: none;
     width: 100%;
     border-radius: 8px;
 }
 
-#projects1{
+#projects1 {
     list-style-type: none;
     color: #000000;
     max-width: 80%;
-    line-height:1;
+    line-height: 1;
     font-size: 20px;
+    font-family: 'Poppins';
 }
 
-#projects1 a{
+#projects1 a {
     text-decoration: none;
     color: #000000;
 }
@@ -161,8 +171,6 @@ body{
     color: white;
     border: none;
     cursor: pointer;
-
-    
 }
 
 .display-right {
@@ -182,14 +190,14 @@ body{
 }
 
 #openbank-about {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins';
     flex: 1;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.6;
     color: #000000;
     max-width: 600px;
-    text-align:left;
+    text-align: left;
     margin: auto 0;
 }
 
@@ -206,3 +214,103 @@ body{
     vertical-align: middle;
 }
 
+@media (max-width: 1024px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .name-section {
+        width: 90%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    #header-name, #title-name {
+        font-size: 30px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slideshow-wrapper {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    #openbank-about {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        padding: 5px;
+    }
+
+    .name-section {
+        width: 90%;
+        text-align: center;
+    }
+
+    #header-name, #title-name {
+        font-size: 30px;
+    }
+
+    .project-container {
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slideshow-wrapper {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    #openbank-about {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrapper {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .name-section {
+        width: 95%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    #header-name, #title-name {
+        font-size: 24px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slideshow-wrapper {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    #openbank-about {
+        font-size: 10px;
+        line-height: 1.4;
+        text-align: center;
+    }
+}

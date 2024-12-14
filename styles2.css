@@ -1,59 +1,70 @@
-body{
-    display:flex;
-    flex-direction: column;
-    background-color: #dec2f5;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-y: auto;
 }
 
-.header-wrapper{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #dec2f5;
+    background-image: url('./images/games.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #dec2f5;
-    margin: 10px;   
-    }
+    margin: 10px;
+}
 
-
-#menuButton{
+#menuButton {
     background: none;
     border: none;
     font-size: 12px;
     color: #360953e0;
-    cursor:pointer;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
+    font-family: 'Poppins';
 }
 
-#contact a{
+#contact a {
     text-decoration: none;
     background: none;
     border: none;
     font-size: 12px;
     color: #360953e0;
-    cursor:pointer;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
-    
+    font-family: 'Poppins';
 }
 
-#dropdown{
-    display:flex;
+#dropdown {
+    display: flex;
     align-items: center;
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content{
-    display:none;
-    position:absolute;
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: #874dac;
     min-width: 160px;
     z-index: 1;
+    font-family: 'Poppins';
 }
 
-.dropdown-content a{
+.dropdown-content a {
     font-size: 12px;
     color: rgb(255, 255, 255);
     padding: 12px 18px;
@@ -61,6 +72,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'Poppins';
     display: block;
 }
 
@@ -68,35 +80,34 @@ body{
     background-color: #9655be;
 }
 
-
 #dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 #dropdown:hover #menuButton {
     color: #9655be;
 }
 
-.name-section{
+.name-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
+    align-items: flex-start;
     padding-left: 10%;
     width: 60%;
 }
 
-#header-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#header-name {
+    font-family: 'Abril Fatface';
     margin-bottom: -10px;
     font-size: 36px;
 }
 
-#title-name{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#title-name {
+    font-family: 'Abril Fatface';
     font-size: 30px;
     margin-bottom: 5px;
 }
+
 .underline {
     width: 100%;
     height: 4px;
@@ -104,7 +115,7 @@ body{
     margin-bottom: 10px;
 }
 
-.text-wrapper{
+.text-wrapper {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
@@ -113,20 +124,96 @@ body{
     gap: 20px;
 }
 
-.first-section{
+.first-section {
     color: #000000;
     max-width: 80%;
-    line-height:1;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 0;
     margin-top: -20px;
+    font-family: 'Poppins';
+    font-weight: 550;
 }
 
-.second-section{
+.second-section {
     color: #000000;
     max-width: 80%;
-    line-height:1;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: -40px;
+    font-family: 'Poppins';
+    font-weight: 550;
 }
 
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .name-section {
+        width: 90%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    #header-name, #title-name {
+        font-size: 30px;
+    }
+
+    .text-wrapper {
+        flex-direction: column;
+        padding-left: 5%;
+        width: 90%;
+    }
+
+    .second-section {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-wrapper {
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .dropdown-content {
+        min-width: 120px;
+    }
+
+    .dropdown-content a {
+        font-size: 10px;
+    }
+
+    .second-section {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrapper {
+        padding: 5px;
+    }
+
+    #header-name, #title-name {
+        font-size: 24px;
+    }
+
+    .first-section {
+        font-size: 14px;
+    }
+
+    .second-section {
+        font-size: 14px;
+    }
+}

@@ -1,5 +1,5 @@
-body{
-    display:flex;
+body {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -12,23 +12,62 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;     
-    text-align: center;      
+    align-items: center;
+    text-align: center;
     gap: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;             
+    font-family: 'Poppins';
 }
 
 .thank-you p {
-    font-size: 1.5rem;       
-    margin: 0;              
+    font-size: 1.5rem; /* Default font size for larger screens */
+    margin: 0;
 }
 
 .thank-you a {
-    font-size: 1rem;         
-    color: #333;             
-    text-decoration: none;   
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
 }
 
 .thank-you a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+    .thank-you p {
+        font-size: 1.25rem;
+    }
+
+    .thank-you a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .thank-you p {
+        font-size: 1.1rem;
+    }
+
+    .thank-you a {
+        font-size: 0.85rem;
+    }
+
+    .thank-you {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you p {
+        font-size: 1rem;
+    }
+
+    .thank-you a {
+        font-size: 0.8rem;
+    }
+
+    .thank-you {
+        gap: 10px;
+    }
 }
