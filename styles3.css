@@ -216,7 +216,7 @@ body {
 
 @media (max-width: 1024px) {
     .header-wrapper {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: center;
         margin: 5px;
     }
@@ -250,6 +250,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+
     .header-wrapper {
         padding: 5px;
     }

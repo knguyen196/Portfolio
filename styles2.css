@@ -154,8 +154,9 @@ footer {
 
 
 @media (max-width: 1024px) {
+    
     .header-wrapper {
-        flex-direction: column;
+        flex-direction: flex;
         align-items: center;
         margin: 5px;
     }
@@ -182,6 +183,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
     .text-wrapper {
         flex-direction: column;
         padding-left: 5%;
