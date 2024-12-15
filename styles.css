@@ -220,7 +220,6 @@ span {
     color: #333;
 }
 
-
 @media (max-width: 1024px) {
     .header-wrapper {
         flex-direction: flex;
