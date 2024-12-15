@@ -255,7 +255,7 @@ span {
     }
 
     .skills-img {
-        flex-direction: column;
+        flex-direction: flex;
         margin-left: 0;
     }
 
