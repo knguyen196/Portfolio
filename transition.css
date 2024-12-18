@@ -37,5 +37,4 @@ body {
 
 .content.visible {
     opacity: 1;
-    transform: scaleX(1); /* Expand to full width */
-}
+    transform: scaleX(1);
