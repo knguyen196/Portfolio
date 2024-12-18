@@ -1,11 +1,10 @@
 .loader {
     position: fixed;
     inset: 0;
-    background-color: #252525; /* Adjust to your theme */
-    z-index: 1000; /* Keep above all content */
-    transform: translateX(-100%); /* Initially hidden */
-    transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1); /* Smooth animation */
-}
+    background-color: #252525;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
 
 [data-route="home"] main,
 [data-route="about"] main,
