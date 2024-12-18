@@ -281,17 +281,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .header-wrapper {
-        padding: 5px;
-        text-align: center;
-    }
-
-    .name-section {
-        width: 95%;
-        padding-left: 5%;
-        text-align: center;
-    }
-
     #header-name, #title-name {
         font-size: 24px;
     }

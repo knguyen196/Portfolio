@@ -249,9 +249,6 @@ span {
 }
 
 @media (max-width: 768px) {
-    #pfp1 {
-        display: none;
-    }
 
     .skills-img {
         flex-direction: flex;
@@ -268,9 +265,6 @@ span {
 }
 
 @media (max-width: 480px) {
-    #pfp1 {
-        display: none;
-    }
 
     #header-name, #title-name {
         font-size: 24px;
