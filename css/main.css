@@ -445,18 +445,38 @@ body.theme-contact {
 }
 
 .detail-slideshow {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    position: relative;
+    display: block;
+    width: fit-content;
 }
 
 .detail-slideshow img {
+    display: block;
     width: auto;
     max-width: 100%;
     max-height: 400px;
     object-fit: contain;
     border-radius: 8px;
 }
+
+.detail-slideshow .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 6px 8px;
+    font-size: 22px;
+    color: #000;
+    background: none;
+    transition: opacity 0.15s ease;
+}
+
+.detail-slideshow .carousel-btn:hover {
+    opacity: 0.6;
+}
+
+.detail-slideshow .carousel-btn:first-child { left: 8px; }
+.detail-slideshow .carousel-btn:last-child  { right: 8px; }
 
 .detail-desc {
     font-family: 'Poppins';
