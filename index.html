@@ -4,63 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kent Nguyen</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <div class="page-transition"></div>
+<body class="theme-home">
     <header>
-    <div class ="header-wrapper">
-        <div id ="dropdown">
-            <button id="menuButton">Menu</button>
-            <div class ="dropdown-content">
-            <a href="about.html">About me</a>
-            <a href="projects.html">Projects</a>
-            </div>
-        </div>
-        <div id ="contact">
-            <a href="contact.html">Contact Me</a>
-        </div>
-    </div>
+        <nav class="header-wrapper">
+            <a href="#" data-section="home">Home</a>
+            <a href="#" data-section="about">About Me</a>
+            <a href="#" data-section="projects">Projects</a>
+            <a href="#" data-section="contact">Contact Me</a>
+        </nav>
     </header>
-    <div class ="content">
-    <div class="name-section">
-        <h1 id = "header-name">KENT NGUYEN</h1>
-        <h2 id="title-name">Computer Science Student</h2>
-        <div class ="underline"></div>
-    </div>
-        <div id= "paragraph1">
-        <p id="first-p">
-            <strong>Hi there! I'm a computer science student currently diving into the world of front-end web development.</strong>  I’m discovering the joy of creating visually appealing and user-friendly websites. Right now, I’m learning more about HTML, CSS, and JavaScript, and I’m eager to keep improving and growing my skills as I go.
-            <br>
-        </p>
-        <div class="pfp">
-            <img id="pfp1" src="./images/Kent.png" alt="Avatar">
+
+    <!-- Home Section -->
+    <section id="section-home" class="content active">
+        <div class="name-section">
+            <h1 class="header-name">KENT NGUYEN</h1>
+            <h2 class="title-name">Computer Science Student</h2>
+            <div class="underline"></div>
         </div>
-    </div>
-    <div class ="skills-container">
-        <div id ="skills-button">
-            <button id = "skills">Skills</button>
-        </div>
-         <div class ="skills-img">
-            <div id = "html">
-                <img id ="html-img" src="./images/html.png" alt ="HTML">
-                <span>HTML</span>
-            </div>
-            <div id ="css">
-                <img id ="css-img" src="./images/css.png" alt ="CSS">
-                <span>CSS</span>
-            </div>
-            <div id = "js">
-                <img id ="js-img" src="./images/javascript.png" alt ="Javascript">
-                <span>JavaScript</span>
+        <div id="paragraph1">
+            <p id="first-p">
+                <strong>Hi there! I'm a computer science student currently diving into the world of front-end web development.</strong> I'm discovering the joy of creating visually appealing and user-friendly websites. Right now, I'm learning more about HTML, CSS, and JavaScript, and I'm eager to keep improving and growing my skills as I go.
+                <br>
+            </p>
+            <div class="pfp">
+                <img id="pfp1" src="./images/Kent.png" alt="Avatar">
             </div>
         </div>
-    </div>
-</div>
-    <script src="script.js" defer></script>
-    <script src="transition.js" defer></script>
+        <div class="skills-container">
+            <div id="skills-button">
+                <button id="skills">Skills</button>
+            </div>
+            <div class="skills-img">
+                <div class="skill-tag">HTML</div>
+                <div class="skill-tag">CSS</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">React</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">C++</div>
+                <div class="skill-tag">Git</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="section-about" class="content">
+        <div class="name-section">
+            <h1 class="header-name">KENT NGUYEN</h1>
+            <h2 class="title-name">About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="text-wrapper">
+            <div class="first-section">
+                <p>
+                    I'm a third-year student at California State University Fullerton.<br>
+                    At first, I wasn't sure which path I wanted to take, but after spending some time learning on my own, I discovered a passion for web development.
+                </p>
+                <p>
+                    For me, school has always been a challenge. I initially planned to major in business, but when things didn't work out, I decided to leave and focus on working until 2021. That year, I returned to school with a fresh start. Switching my major to computer science has given me more motivation than ever to finish my degree.
+                </p>
+            </div>
+            <div class="second-section">
+                <p>
+                    When I'm not busy with school, I enjoy a variety of hobbies.
+                    I'm an avid gamer, playing everything from FPS and RPGs to more casual games. Right now, my main game is MapleStory. Outside of gaming, I enjoy photography, experimenting with both digital and film, including small and medium formats. When I'm not gaming or behind a camera, I like to watch web development tutorials or work on some side projects to expand my skills.
+                </p>
+            </div>
+        </div>
+        <div class="photo-strip-wrapper">
+            <button class="carousel-btn" onclick="photoMove(-1)">&#10094;</button>
+            <div class="photo-strip">
+                <img src="./photography/joshuatree1.png" onclick="myFunction(this);">
+                <img src="./photography/joshuatree2.png" onclick="myFunction(this);">
+                <img src="./photography/beach1.jpg"      onclick="myFunction(this);">
+                <img src="./photography/blue.jpg"        onclick="myFunction(this);">
+                <img src="./photography/cactus.jpg"      onclick="myFunction(this);">
+                <img src="./photography/SK8.jpg"         onclick="myFunction(this);">
+                <img src="./photography/tree.jpg"        onclick="myFunction(this);">
+                <img src="./photography/CH.jpg"          onclick="myFunction(this);">
+                <img src="./photography/CH2.jpg"         onclick="myFunction(this);">
+            </div>
+            <button class="carousel-btn" onclick="photoMove(1)">&#10095;</button>
+        </div>
+        <div class="container" onclick="closeImage();">
+            <span class="closebtn" onclick="closeImage();">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="section-projects" class="content">
+        <div class="name-section">
+            <h1 class="header-name">KENT NGUYEN</h1>
+            <h2 class="title-name">Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="project-detail-area" id="project-detail-area"></div>
+
+        <div class="project-thumbnails">
+            <div class="project-thumb" onclick="openProject('openbank')">
+                <img src="./images/dashboard.png" alt="OpenBank DBMS">
+                <span>OpenBank DBMS</span>
+            </div>
+
+            <div class ="project-thumb" onclick="openProject('horodaily')">
+                <img src="./images/horoscope.png" alt="HoroDaily">
+                <span>HoroDaily</span>
+            </div>
+
+            <div class ="project-thumb" onclick="openProject('gomoku')">
+                <img src="./images/gomoku.png" alt="Gomoku Game">
+                <span>Gomoku Game</span>
+            </div>
+
+            <div class ="project-thumb" onclick="openProject('mapletracker')">
+                <img src="./images/mapletracker1.png" alt="MapleTracker">
+                <span>MapleTracker</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="section-contact" class="content">
+        <div class="name-section">
+            <h1 class="header-name">KENT NGUYEN</h1>
+            <h2 class="title-name">Lets Connect!</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <p class="contact-text">Feel free to reach out to me with the contact form or any of my socials below!</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="redirect" value="https://knguyen196.github.io/Portfolio/thankyou.html">
+                <input type="hidden" name="access_key" value="ff91737e-4053-4eb0-b178-a14d5b7ebb5c">
+                <input type="text" name="name" placeholder="Name" class="contact-input" required>
+                <input type="email" name="email" placeholder="Email Address" class="contact-input" required>
+                <textarea name="message" placeholder="Message" class="contact-input" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-socials">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/knguyen196/" target="_blank" aria-label="LinkedIn">
+                        <img src="./images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/knguyen196" target="_blank" aria-label="GitHub">
+                        <img src="./images/github-mark.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/expand.js" defer></script>
 </body>
 </html>
