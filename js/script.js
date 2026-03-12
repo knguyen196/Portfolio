@@ -102,19 +102,28 @@ var projects = {
 var modalImgIndex = 0;
 var modalImages = [];
 
+var activeProjectId = null;
+
 function openProject(id) {
     var p = projects[id];
     if (!p) return;
+    activeProjectId = id;
     modalImages = p.images;
     modalImgIndex = 0;
+
+    document.querySelectorAll(".project-thumb").forEach(function(el) {
+        el.classList.toggle("active", el.getAttribute("onclick") === "openProject('" + id + "')");
+    });
+
     var area = document.getElementById("project-detail-area");
+    var slideshowBtns = p.images.length > 1
+        ? '<button class="carousel-btn" onclick="modalSlide(-1)">&#8249;</button>' +
+          '<img id="modal-img" src="' + p.images[0] + '" alt="">' +
+          '<button class="carousel-btn" onclick="modalSlide(1)">&#8250;</button>'
+        : '<img id="modal-img" src="' + p.images[0] + '" alt="">';
     area.innerHTML =
         '<h2 class="detail-title">' + p.title + '</h2>' +
-        '<div class="detail-slideshow">' +
-            '<button class="carousel-btn" onclick="modalSlide(-1)">&#10094;</button>' +
-            '<img id="modal-img" src="' + p.images[0] + '" alt="">' +
-            '<button class="carousel-btn" onclick="modalSlide(1)">&#10095;</button>' +
-        '</div>' +
+        '<div class="detail-slideshow">' + slideshowBtns + '</div>' +
         '<p class="detail-desc">' + p.description + '</p>' +
         '<a class="detail-link" href="' + p.github + '" target="_blank">' +
             '<img src="./images/github-mark.png" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:6px;">' +
