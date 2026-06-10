@@ -377,14 +377,17 @@ body.theme-contact {
 
 .projects-body {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 16px;
     padding: 8px 10% 24px;
-    align-items: flex-start;
+    flex: 1;
+    min-height: 0;
 }
 
 .project-detail-area {
     display: none;
     flex: 1;
+    min-height: 0;
     min-width: 0;
 }
 
@@ -396,10 +399,11 @@ body.theme-contact {
 
 .project-thumbnails {
     display: flex;
-    flex-direction: column;
-    gap: 14px;
+    flex-direction: row;
+    gap: 16px;
     flex-shrink: 0;
-    width: 120px;
+    overflow-x: auto;
+    padding-bottom: 4px;
 }
 
 .project-thumb {
@@ -408,7 +412,8 @@ body.theme-contact {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    width: 120px;
+    flex-shrink: 0;
+    width: 110px;
     opacity: 0.55;
     transition: opacity 0.2s ease;
 }
@@ -419,8 +424,8 @@ body.theme-contact {
 }
 
 .project-thumb img {
-    width: 120px;
-    height: 80px;
+    width: 110px;
+    height: 72px;
     object-fit: cover;
     border-radius: 6px;
     transition: box-shadow 0.2s ease;
@@ -615,14 +620,7 @@ footer {
     }
 
     .projects-body {
-        flex-direction: column;
         padding: 8px 5% 24px;
-    }
-
-    .project-thumbnails {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: auto;
     }
 
     .contact-container {
@@ -715,9 +713,19 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    body.theme-home {
+        overflow-y: auto;
+    }
+}
+
 @media (max-width: 480px) {
     .skills-img {
         margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .header-name, .title-name {
