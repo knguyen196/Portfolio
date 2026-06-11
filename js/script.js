@@ -136,6 +136,22 @@ var projects = {
       "This is a personal project that I worked on. It is a conversational decision-making app that guides you through a structured thinking process. Set your context, have a real conversation about your situation, and walk away with a clear analysis including pros, cons, key insights, and a confidence-rated recommendation. Past decisions are saved locally so you can revisit and build on them anytime. The languages and tools used were React, JavaScript, Tailwind CSS, and Framer Motion.",
     github: "https://github.com/knguyen196/TWRDS",
   },
+
+  moodge: {
+    title: "Moodge",
+    images: [
+      "./images/moodge1.png",
+      "./images/moodge2.png",
+      "./images/moodge3.png",
+      "./images/moodge4.png",
+      "./images/moodge5.png",
+      "./images/moodge6.png",
+      "./images/moodge7.png",
+    ],
+    description:
+      "This is a personal project that I worked on. It is a full-stack mood tracking app that helps you understand what actually affects how you feel. Define your own factors to track like sleep, caffeine, or exercise, log your mood each day alongside them, and the app surfaces patterns showing which factors move your mood the most. View your trends on a dashboard, browse your full history, and see data-driven insights, all secured behind your own account. The languages and tools used were React, Node.js, Express, PostgreSQL, and Prisma.",
+    github: "https://github.com/knguyen196/Mood-Tracker",
+  },
 };
 
 var modalImgIndex = 0;
