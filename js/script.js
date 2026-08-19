@@ -78,7 +78,7 @@ var projects = {
       "./images/account.png",
     ],
     description:
-      "This project was made in my Open Source Development class. It is a database management system that includes a sign-up page, login, and account dashboard. The languages used were HTML, CSS, JavaScript, and PHP.",
+      "Built in my Open Source Development class. A database management system with sign-up, login, and account dashboard functionality. The languages used were HTML, CSS, JavaScript, and PHP.",
     github: "https://github.com/MariahSalgado/CPSC254_Project",
   },
 
@@ -86,7 +86,7 @@ var projects = {
     title: "HoroDaily",
     images: ["./images/horoscope.png"],
     description:
-      "This project was made in my Software Engineering class. It is a horoscope website that provides daily horoscopes for all zodiac signs. The languages used were HTML, CSS, and JavaScript.",
+      "Built in my Software Engineering class. A horoscope website delivering daily readings for all zodiac signs. The languages used were HTML, CSS, and JavaScript.",
     github: "https://github.com/dnguyen1484/HoroscopeWebsite",
   },
 
@@ -94,7 +94,7 @@ var projects = {
     title: "Gomoku Game with Minimax AI",
     images: ["./images/gomoku.png"],
     description:
-      "This project was made in my Artificial Intelligence class. It is a web-based implementation of the Gomoku game, featuring an AI opponent that uses the Minimax algorithm with alpha-beta pruning. The languages used were HTML, CSS, and JavaScript.",
+      "Built in my Artificial Intelligence class. A web-based implementation of Gomoku featuring an AI opponent powered by the Minimax algorithm with alpha-beta pruning. The languages used were HTML, CSS, and JavaScript.",
     github: "https://github.com/knguyen196/481-Project-Gomoku",
   },
 
@@ -102,7 +102,7 @@ var projects = {
     title: "MapleTracker",
     images: ["./images/mapletracker1.png", "./images/mapletracker2.png"],
     description:
-      "This is a personal project that I worked on. It is a web application that allows users to grab their character(s) using the MapleStory Rankings API included in the add character section and track their weekly bosses and drops. The languages used were HTML, CSS, JavaScript",
+      "A web application for tracking MapleStory characters' weekly boss runs and drops. Add characters using the MapleStory Rankings API, then log and monitor progress from a central dashboard. The languages used were HTML, CSS, and JavaScript.",
     github: "https://github.com/knguyen196/MapleTracker",
   },
 
@@ -118,7 +118,7 @@ var projects = {
       "./images/musicrecommender7.png",
     ],
     description:
-      "This project was made for my senior capstone project. It is a personalized music and podcast recommendation system that combines audio feature analysis with user behavior patterns to surface recommendations that fit your taste. The languages and tools used were React, Python, JavaScript, and CSS.",
+      "Built for my senior capstone. A personalized music and podcast recommendation system combining audio feature analysis with user behavior patterns to surface recommendations that fit your taste. The languages and tools used were React, Python, JavaScript, and CSS.",
     github: "https://github.com/knguyen196/MusicRecommender",
   },
 
@@ -133,7 +133,7 @@ var projects = {
       "./images/twrds6.png",
     ],
     description:
-      "This is a personal project that I worked on. It is a conversational decision-making app that guides you through a structured thinking process. Set your context, have a real conversation about your situation, and walk away with a clear analysis including pros, cons, key insights, and a confidence-rated recommendation. Past decisions are saved locally so you can revisit and build on them anytime. The languages and tools used were React, JavaScript, Tailwind CSS, and Framer Motion.",
+      "A conversational decision-making app that guides you through a structured thinking process. Set your context, talk through your situation, and walk away with a clear analysis including pros, cons, key insights, and a confidence-rated recommendation. Past decisions save locally so you can revisit and build on them anytime. The languages and tools used were React, JavaScript, Tailwind CSS, and Framer Motion.",
     github: "https://github.com/knguyen196/TWRDS",
   },
 
@@ -149,8 +149,30 @@ var projects = {
       "./images/moodge7.png",
     ],
     description:
-      "This is a personal project that I worked on. It is a full-stack mood tracking app that helps you understand what actually affects how you feel. Define your own factors to track like sleep, caffeine, or exercise, log your mood each day alongside them, and the app surfaces patterns showing which factors move your mood the most. View your trends on a dashboard, browse your full history, and see data-driven insights, all secured behind your own account. The languages and tools used were React, Node.js, Express, PostgreSQL, and Prisma.",
+      "A full-stack mood tracking app that helps you understand what actually affects how you feel. Define your own factors to track, like sleep, caffeine, or exercise, log your mood daily alongside them, and let the app surface which factors move the needle most. View trends on a dashboard, browse full history, and see data-driven insights, all secured behind your own account. The languages and tools used were React, Node.js, Express, PostgreSQL, and Prisma.",
     github: "https://github.com/knguyen196/Mood-Tracker",
+  },
+
+  froggo: {
+    title: "Froggo",
+    images: [
+      "./images/froggo-idle.gif",
+      "./images/froggo-hop.gif",
+      "./images/froggo-eat.gif",
+      "./images/froggo-drink.gif",
+      "./images/froggo-tired.gif",
+    ],
+    description:
+      "A desktop pet app featuring a frog companion that lives on your screen, with a care system built around evolving need states rather than a static idle animation. Progress persists locally between sessions, and the window resizes dynamically to match the pet's behavior. Packaged as a standalone portable executable. The languages and tools used were Electron, React, and JavaScript.",
+    github: "https://github.com/knguyen196/Froggo",
+  },
+
+  paintbloom: {
+    title: "PaintBloom",
+    images: ["./images/paintbloom.png"],
+    description:
+      "A procedural flower painting tool that generates unique floral compositions using a seeded random number generator, so any piece can be recreated from its seed. Click to fill in generated regions with color, layer on freehand brush strokes, and adjust a grain texture for a more organic look. Includes a full undo history and PNG export. The languages and tools used were React, JavaScript, and the Canvas 2D API.",
+    github: "https://github.com/knguyen196/paintbloom",
   },
 };
 
