@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const config = sections[name];
         if (!config) return;
         document.body.className = config.theme;
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeColorMeta) {
+          themeColorMeta.setAttribute(
+            "content",
+            getComputedStyle(document.body).getPropertyValue("--bg-color").trim(),
+          );
+        }
         document.querySelectorAll("[data-section]").forEach((link) => {
           link.classList.toggle("active", link.dataset.section === name);
         });
