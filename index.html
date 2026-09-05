@@ -6,31 +6,31 @@
     <title>Kent Nguyen</title>
     <link rel="icon" type="image/png" href="./images/Kent.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Abril Fatface"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="theme-home">
     <header>
       <nav class="header-wrapper">
-        <a href="#" data-section="home">Home</a>
-        <a href="#" data-section="about">About Me</a>
-        <a href="#" data-section="projects">Projects</a>
-        <a href="#" data-section="contact">Contact Me</a>
+        <a class="nav-mark" href="#section-home" data-section="home">kn.</a>
+        <a href="#section-home" data-section="home">Home</a>
+        <a href="#section-about" data-section="about">About Me</a>
+        <a href="#section-projects" data-section="projects">Projects</a>
+        <a href="#section-contact" data-section="contact">Contact Me</a>
       </nav>
+      <div class="scroll-progress" id="scroll-progress"></div>
     </header>
 
     <!-- Home Section -->
-    <section id="section-home" class="content active">
+    <section id="section-home" class="content">
       <div class="name-section">
+        <p class="hero-kicker">// hi there, i'm</p>
         <h1 class="header-name">KENT NGUYEN</h1>
         <h2 class="title-name">Computer Science Graduate</h2>
-        <div class="underline"></div>
       </div>
       <div id="paragraph1">
         <p id="first-p">
@@ -42,16 +42,12 @@
           user-friendly websites. Right now, I'm learning more about HTML, CSS,
           and JavaScript, and I'm eager to keep improving and growing my skills
           as I go.
-          <br />
         </p>
         <div class="pfp">
           <img id="pfp1" src="./images/Kent.png" alt="Avatar" />
         </div>
       </div>
       <div class="skills-container">
-        <div id="skills-button">
-          <button id="skills">Skills</button>
-        </div>
         <div class="skills-img">
           <div class="skill-tag">HTML</div>
           <div class="skill-tag">CSS</div>
@@ -62,17 +58,15 @@
           <div class="skill-tag">Git</div>
         </div>
       </div>
+      <a class="scroll-cue" href="#section-about" data-section="about" aria-label="Scroll to About"><span>&#8595;</span></a>
     </section>
 
     <!-- About Section -->
     <section id="section-about" class="content">
-      <div class="name-section">
-        <h1 class="header-name">KENT NGUYEN</h1>
-        <h2 class="title-name">About Me</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="text-wrapper">
-        <div class="first-section">
+      <p class="section-kicker">01 / about</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-columns">
+        <div class="about-text">
           <p>
             I'm a Computer Science graduate from California State University
             Fullerton.<br />
@@ -88,8 +82,6 @@
             gave me more motivation than ever, and I'm proud to have finished my
             degree.
           </p>
-        </div>
-        <div class="second-section">
           <p>
             In my free time, I enjoy a variety of hobbies. I'm an avid gamer,
             playing everything from FPS and RPGs to more casual games. Right
@@ -100,24 +92,32 @@
             projects to expand my skills.
           </p>
         </div>
-      </div>
-      <div class="photo-strip-wrapper">
-        <button class="carousel-btn" onclick="photoMove(-1)">&#8249;</button>
-        <div class="photo-strip">
-          <img src="./photography/joshuatree1.png" onclick="myFunction(this)" />
-          <img src="./photography/joshuatree2.png" onclick="myFunction(this)" />
-          <img src="./photography/beach1.jpg" onclick="myFunction(this)" />
-          <img src="./photography/blue.jpg" onclick="myFunction(this)" />
-          <img src="./photography/cactus.jpg" onclick="myFunction(this)" />
-          <img src="./photography/SK8.jpg" onclick="myFunction(this)" />
-          <img src="./photography/tree.jpg" onclick="myFunction(this)" />
-          <img src="./photography/CH.jpg" onclick="myFunction(this)" />
-          <img src="./photography/CH2.jpg" onclick="myFunction(this)" />
+        <div class="photo-gallery">
+          <img
+            id="featured-photo"
+            src="./photography/joshuatree1.png"
+            alt="Photography by Kent"
+            onclick="myFunction(this)"
+          />
+          <div class="photo-strip-wrapper">
+            <button class="carousel-btn" onclick="photoMove(-1)">&#8249;</button>
+            <div class="photo-strip">
+              <img src="./photography/joshuatree1.png" alt="" />
+              <img src="./photography/joshuatree2.png" alt="" />
+              <img src="./photography/beach1.jpg" alt="" />
+              <img src="./photography/blue.jpg" alt="" />
+              <img src="./photography/cactus.jpg" alt="" />
+              <img src="./photography/SK8.jpg" alt="" />
+              <img src="./photography/tree.jpg" alt="" />
+              <img src="./photography/CH.jpg" alt="" />
+              <img src="./photography/CH2.jpg" alt="" />
+            </div>
+            <button class="carousel-btn" onclick="photoMove(1)">&#8250;</button>
+          </div>
         </div>
-        <button class="carousel-btn" onclick="photoMove(1)">&#8250;</button>
       </div>
       <div class="container" onclick="closeImage()">
-        <span class="closebtn" onclick="closeImage()">&times;</span>
+        <span class="closebtn">&times;</span>
         <img id="expandedImg" style="width: 100%" />
         <div id="imgtext"></div>
       </div>
@@ -125,78 +125,25 @@
 
     <!-- Projects Section -->
     <section id="section-projects" class="content">
-      <div class="name-section">
-        <h1 class="header-name">KENT NGUYEN</h1>
-        <h2 class="title-name">Projects</h2>
-        <div class="underline"></div>
-      </div>
+      <p class="section-kicker">02 / work</p>
+      <h2 class="section-title">Projects</h2>
       <div class="projects-body">
         <div class="project-detail-area" id="project-detail-area"></div>
 
-        <div class="project-thumbnails">
-          <div class="project-thumb" onclick="openProject('openbank')">
-            <img src="./images/dashboard.png" alt="OpenBank DBMS" />
-            <span>OpenBank DBMS</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('horodaily')">
-            <img src="./images/horoscope.png" alt="HoroDaily" />
-            <span>HoroDaily</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('gomoku')">
-            <img src="./images/gomoku.png" alt="Gomoku Game" />
-            <span>Gomoku Game</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('mapletracker')">
-            <img src="./images/mapletracker1.png" alt="MapleTracker" />
-            <span>MapleTracker</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('musicrecommender')">
-            <img
-              src="./images/musicrecommender1.png"
-              alt="Hybrid Music Recommender"
-            />
-            <span>Hybrid Music Recommender</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('twrds')">
-            <img src="./images/twrds1.png" alt="TWRDS" />
-            <span>TWRDS</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('moodge')">
-            <img src="./images/moodge1.png" alt="Moodge" />
-            <span>Moodge</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('froggo')">
-            <img src="./images/froggo-idle.gif" alt="Froggo" />
-            <span>Froggo</span>
-          </div>
-
-          <div class="project-thumb" onclick="openProject('paintbloom')">
-            <img src="./images/paintbloom.png" alt="PaintBloom" />
-            <span>PaintBloom</span>
-          </div>
-        </div>
+        <div class="project-grid" id="project-grid"></div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="section-contact" class="content">
-      <div class="name-section">
-        <h1 class="header-name">KENT NGUYEN</h1>
-        <h2 class="title-name">Lets Connect!</h2>
-        <div class="underline"></div>
-      </div>
+      <p class="section-kicker">03 / contact</p>
+      <h2 class="section-title">Lets Connect!</h2>
       <div class="contact-container">
         <p class="contact-text">
           Feel free to reach out to me with the contact form or any of my
           socials below!
         </p>
+        <div class="contact-columns">
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
@@ -234,28 +181,32 @@
           ></textarea>
           <button type="submit">Submit</button>
         </form>
-      </div>
-      <footer>
-        <div class="footer-socials">
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/knguyen196/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <img src="./images/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a
-              href="https://github.com/knguyen196"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <img src="./images/github-mark.png" alt="GitHub" />
-            </a>
-          </div>
+        <div class="contact-info">
+          <h3>Find Me Online</h3>
+          <a
+            class="contact-social-link"
+            href="https://www.linkedin.com/in/knguyen196/"
+            target="_blank"
+          >
+            <img src="./images/linkedin.png" alt="" />
+            LinkedIn
+          </a>
+          <a
+            class="contact-social-link"
+            href="https://github.com/knguyen196"
+            target="_blank"
+          >
+            <img src="./images/github-mark.png" alt="" />
+            GitHub
+          </a>
         </div>
-      </footer>
+        </div>
+      </div>
     </section>
+
+    <footer class="site-footer">
+      designed &amp; built by kent nguyen &middot; vanilla html / css / js
+    </footer>
 
     <script src="js/script.js" defer></script>
     <script src="js/expand.js" defer></script>

@@ -1,19 +1,12 @@
-function myFunction(imgs) {
+function myFunction(img) {
+  const expandedImg = document.getElementById("expandedImg");
+  const imgText = document.getElementById("imgtext");
 
-    const expandedImg = document.getElementById("expandedImg");
-    const imgText = document.getElementById("imgtext");
-    const container = expandedImg.parentElement;
-  
-    
-    expandedImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-  
-   
-    container.style.display = "flex";
-  }
-  
-  function closeImage() {
-    const container = document.querySelector(".container");
-    container.style.display = "none";
-  }
-  
+  expandedImg.src = img.src;
+  imgText.innerHTML = img.alt;
+  expandedImg.parentElement.style.display = "flex";
+}
+
+function closeImage() {
+  document.querySelector(".container").style.display = "none";
+}
