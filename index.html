@@ -58,7 +58,13 @@
           <div class="skill-tag">Git</div>
         </div>
       </div>
-      <a class="scroll-cue" href="#section-about" data-section="about" aria-label="Scroll to About"><span>&#8595;</span></a>
+      <a
+        class="scroll-cue"
+        href="#section-about"
+        data-section="about"
+        aria-label="Scroll to About"
+        ><span>&#8595;</span></a
+      >
     </section>
 
     <!-- About Section -->
@@ -87,9 +93,9 @@
             playing everything from FPS and RPGs to more casual games. Right
             now, my main game is MapleStory. Outside of gaming, I enjoy
             photography, experimenting with both digital and film, including
-            small and medium formats. When I'm not gaming or behind a camera, I
-            like to watch web development tutorials or work on some side
-            projects to expand my skills.
+            small and medium formats. I've also picked up hiking as of recently!
+            When I'm not gaming, behind a camera, or on the trails. I like to
+            work on some side projects to expand my skills.
           </p>
         </div>
         <div class="photo-gallery">
@@ -100,7 +106,9 @@
             onclick="myFunction(this)"
           />
           <div class="photo-strip-wrapper">
-            <button class="carousel-btn" onclick="photoMove(-1)">&#8249;</button>
+            <button class="carousel-btn" onclick="photoMove(-1)">
+              &#8249;
+            </button>
             <div class="photo-strip">
               <img src="./photography/joshuatree1.png" alt="" />
               <img src="./photography/joshuatree2.png" alt="" />
@@ -141,72 +149,70 @@
       <div class="contact-container">
         <p class="contact-text">
           Feel free to reach out to me with the contact form or any of my
-          socials below!
+          socials!
         </p>
         <div class="contact-columns">
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="contact-left"
-        >
-          <input
-            type="hidden"
-            name="redirect"
-            value="https://knguyen196.github.io/Portfolio/thankyou.html"
-          />
-          <input
-            type="hidden"
-            name="access_key"
-            value="ff91737e-4053-4eb0-b178-a14d5b7ebb5c"
-          />
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            class="contact-input"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            class="contact-input"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            class="contact-input"
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        <div class="contact-info">
-          <h3>Find Me Online</h3>
-          <a
-            class="contact-social-link"
-            href="https://www.linkedin.com/in/knguyen196/"
-            target="_blank"
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
           >
-            <img src="./images/linkedin.png" alt="" />
-            LinkedIn
-          </a>
-          <a
-            class="contact-social-link"
-            href="https://github.com/knguyen196"
-            target="_blank"
-          >
-            <img src="./images/github-mark.png" alt="" />
-            GitHub
-          </a>
-        </div>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://knguyen196.github.io/Portfolio/thankyou.html"
+            />
+            <input
+              type="hidden"
+              name="access_key"
+              value="ff91737e-4053-4eb0-b178-a14d5b7ebb5c"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact-input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="contact-input"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              class="contact-input"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div class="contact-info">
+            <h3>Find Me Online</h3>
+            <a
+              class="contact-social-link"
+              href="https://www.linkedin.com/in/knguyen196/"
+              target="_blank"
+            >
+              <img src="./images/linkedin.png" alt="" />
+              LinkedIn
+            </a>
+            <a
+              class="contact-social-link"
+              href="https://github.com/knguyen196"
+              target="_blank"
+            >
+              <img src="./images/github-mark.png" alt="" />
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      designed &amp; built by kent nguyen &middot; vanilla html / css / js
-    </footer>
+    <footer class="site-footer">designed &amp; built by kent nguyen</footer>
 
     <script src="js/script.js" defer></script>
     <script src="js/expand.js" defer></script>
